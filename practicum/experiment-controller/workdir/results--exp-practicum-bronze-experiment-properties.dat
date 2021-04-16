@@ -1,0 +1,28 @@
+{ "results": "
+
+Experiment consisting of 1 runs and 1 request types:
+	SaaSRequest
+
+
+Load,          Duration,      Troughput,     Capacity,      Slow requests, Timing accuracy
+------------------------------------------------------------------------------------------
+200,           1000s,         20662,         20.662,        0.01%,         0.889ms        
+
+
+Breakdown of residence times for SaaSRequest requests:
+
+Load,          Min,           Max,           Mean,          Std. dev.,     Shape,         Scale          (successful)   (failed)       (error)        (conn_problem) (timed_out)    (redirected)   (no_result)    
+200            102.963        70097.032      8638.638       7709.662       1.256          6880.586       20843          0              0              0              0              0              0              
+
+
+Percentiles of sampled residence times (only an approximation if residence_times_sample_fraction is set):
+
+SaaSRequest (run 1, 200 users):
+	50.0%	of requests handled in 6210.576ms.
+	90.0%	of requests handled in 20598.246ms.
+	95.0%	of requests handled in 23297.281ms.
+	99.0%	of requests handled in 27800.494ms.
+	99.9%	of requests handled in 45477.033ms.
+	99.99%	of requests handled in 60616.675ms.
+
+" }
