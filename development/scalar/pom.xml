@@ -195,6 +195,8 @@
 			<groupId>be.kuleuven.distrinet.scalar</groupId>
 			<artifactId>scalar</artifactId>
 			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/scalar-1.0.0.jar</systemPath>
 		</dependency>
 	</dependencies>
 

@@ -192,7 +192,7 @@
 			<version>2.6.0</version>
 		</dependency>
 		<dependency>
-			<groupId>be.kuleuven.distrinet.scalar</groupId>
+			<groupId>be.kuleuven.distrinet</groupId>
 			<artifactId>scalar</artifactId>
 			<version>1.0.0</version>
 		</dependency>
@@ -204,5 +204,12 @@
 			<url>scpexe://ssh.cs.kuleuven.be/cw/w3users/thomash/public_html/mvn</url>
 		</repository>
 	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>lib</id>
+			<url>file://${project.basedir}/lib</url>
+		</repository>
+	</repositories>
 
 </project>
