@@ -1,5 +1,0 @@
-13:04:11   Scalar v1.0.0 starting up...
-           experiment.properties - /exp/practicum/bronze.experiment.properties
-           platform.properties - /exp/etc/platform.properties
-13:04:11   Registered new VMShutdownHook housekeeper.
-13:04:11   Loaded data provider LocalStorageProvider

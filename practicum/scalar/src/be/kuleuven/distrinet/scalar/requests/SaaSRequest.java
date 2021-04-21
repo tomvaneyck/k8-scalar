@@ -9,15 +9,15 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-public class SaasRequest extends Request {
-    public SaasRequest(User usr) {
+public class SaaSRequest extends Request {
+    public SaaSRequest(User usr) {
         super(usr, true);
     }
 
     public void doRequest() throws RequestException {
     	HttpClient httpClient = new DefaultHttpClient();
     	try {
-        	HttpGet httpGetRequest = new HttpGet("http://10.103.25.118/request/0");
+        	HttpGet httpGetRequest = new HttpGet(this.user().targetUrl() + "/request/0");
             startTimer();
             HttpResponse httpResponse = httpClient.execute(httpGetRequest);
             stopTimer();
