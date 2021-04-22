@@ -14,16 +14,16 @@ spec:
         app: experiment-controller
         technology: scalar
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-          - labelSelector:
-              matchExpressions:
-              - key: app
-                operator: In
-                values:
-                - experiment-controller
-            topologyKey: "kubernetes.io/hostname" 
+    #   affinity:
+        # podAntiAffinity:
+        #   requiredDuringSchedulingIgnoredDuringExecution:
+        #   - labelSelector:
+        #       matchExpressions:
+        #       - key: app
+        #         operator: In
+        #         values:
+        #         - experiment-controller
+        #     topologyKey: "kubernetes.io/hostname" 
       containers:
       - name: experiment-controller
         image:  decomads/experiment-controller-cassandra-saas 
