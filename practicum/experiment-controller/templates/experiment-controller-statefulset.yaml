@@ -7,7 +7,7 @@ spec:
     matchLabels:
       app: experiment-controller
   serviceName: experiment-controller
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
