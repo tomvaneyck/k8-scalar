@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-saas-ingress
+  namespace: bronze
+spec:
+  podSelector:
+    matchLabels:
+      run: "saas"
+  policyTypes:
+  - Ingress
+  ingress: 
+  - from:
+    - podSelector:
+        matchLabels: 
+          app: experiment-controller
+      namespaceSelector:
+        matchLabels: 
+          default: 'yes' # Label zelf toegevoegd
+    ports:
+    - protocol: TCP
+      port: 5000     # Containerport
+
+
